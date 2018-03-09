@@ -5,7 +5,7 @@ var express = require( "express" )
    app.get( "/fortune/", function ( reqt, resp ) {
      request( "http://" + www_yerkee_com + "/api/fortune",
        function( err, hdr, body ) {
-         resp.json( bdy )
+         resp.json( bdy ) // comment 
 }) })
    app.listen( 3000, function () {
      console.log( "listening on port 3000..." )
